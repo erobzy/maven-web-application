@@ -33,7 +33,6 @@
 	<span style="font-weight: bold;">
 		DataPandas, 
 		www.datapandas.com
-		+1 437 215 2483,
 		cs@datapandas.com
 		<br>
 		<a href="mailto:cs@datapandas.com">Mail to DataPandas</a>
