@@ -110,7 +110,7 @@
 	</distributionManagement>
 	
 	<build>
-		<finalName>Datapandas</finalName>
+		<finalName>barclays</finalName>
 		
 		<plugins>
 			<plugin>
