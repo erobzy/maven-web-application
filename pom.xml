@@ -33,7 +33,7 @@
 	       <id>nexus</id>
 		<name>nexus proxy repo</name>
 		<url>http://54.90.6.144:8081/repository/barclays-proxy/</url>
-		<repository>
+	       </repository>
 	</repositories>
 
 	<dependencies>
