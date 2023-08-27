@@ -28,6 +28,13 @@
 		<project.reporting.outputEncoding>UTF-8</project.reporting.outputEncoding>
 
 	</properties>
+	<repositories>
+	       <repository>
+	       <id>nexus</id>
+		<name>nexus proxy repo</name>
+		<url>http://54.90.6.144:8081/repository/barclays-proxy/</url>
+		<repository>
+	</repositories>
 
 	<dependencies>
 		
