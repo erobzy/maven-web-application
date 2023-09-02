@@ -1,1 +1,1 @@
-maven-web-application
+maven-web-application for devops
