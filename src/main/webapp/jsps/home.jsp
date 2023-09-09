@@ -9,7 +9,7 @@
 </head>
 </head>
 <body>
-<h1 align="center">DataPandas  --> Your IT Career Starts Here</h1>
+<h1 align="center">DataPandas  --> Your DevOps IT Career Starts Here</h1>
 <h1 align="center"> Welcome to our DevOps training website! We are passionate 
 	about helping individuals and organizations learn and implement DevOps principles
 	and practices.
