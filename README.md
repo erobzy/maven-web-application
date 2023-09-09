@@ -1,1 +1,1 @@
-maven-web-application for Devops Engineering
+maven-web-application for Devops Engineering project
