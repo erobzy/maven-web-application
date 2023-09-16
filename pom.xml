@@ -117,7 +117,7 @@
 	</distributionManagement>
 	
 	<build>
-		<finalName>barclays</finalName>
+		<finalName>comparethemarket</finalName>
 		
 		<plugins>
 			<plugin>
