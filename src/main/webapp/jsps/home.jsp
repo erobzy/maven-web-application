@@ -12,7 +12,7 @@
 <h1 align="center">DataPandas  --> Your DevOps IT Career Starts Here</h1>
 <h1 align="center"> Welcome to our DevOps training website! We are passionate 
 	about helping individuals and organizations learn and implement DevOps principles
-	and practices.
+	and practices. This is a project for CompareTheMarket.
     Our courses are designed to cater to a wide range of audiences, from beginners 
 	to experienced professionals. We offer both live coaching and pre-recorded 
 	training programs, allowing our learners to choose the mode of learning 
