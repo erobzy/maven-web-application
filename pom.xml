@@ -32,7 +32,7 @@
 	       <repository>
 	       <id>nexus</id>
 		<name>nexus proxy repo</name>
-		<url>http://54.90.6.144:8081/repository/barclays-proxy/</url>
+		<url>http://35.176.80.39:8081/repository/barclays-proxy/</url>
 	       </repository>
 	</repositories>
 
@@ -105,13 +105,13 @@
 	    <repository>
 	      <id>nexus</id>
 	      <name>DataPandas Releases Nexus Repository</name>
-	      <url>http://35.178.194.125:3000/repository/docker-release/</url>
+	      <url>http://35.176.80.39:3000/repository/docker-release/</url>
 	    </repository>
 	    
 	    <snapshotRepository>
 	      <id>nexus</id>
 	      <name>DataPandas Snapshot Nexus Repository </name>
-	      <url>http://35.178.194.125:3000/repository/docker-snapshot/</url>
+	      <url>http://35.176.80.39:3000/repository/docker-snapshot/</url>
 	    </snapshotRepository>
 	    
 	</distributionManagement>
