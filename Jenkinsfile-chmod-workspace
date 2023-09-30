@@ -1,0 +1,38 @@
+@Library('Datapandas-Library') _
+node{
+   def mavenHome = tool name: "maven386"
+    stage('1.git clone'){   
+        git branch: 'main', url: 'https://github.com/benadaba/maven-web-application'
+  }
+  stage('2.maven-Build')
+  { 
+      sh "chmod +x -R ${env.WORKSPACE}"
+     sh "chmod +x -R ${mavenHome} && ${mavenHome}/bin/mvn clean package"
+     //common("Build")
+     
+  }
+    stage('2.APPROVALGATE')
+  { 
+     timeout(time:9, unit:'HOURS') {
+      input message: 'Check application'
+            }
+     
+  }
+  stage('3.CodeQualityReport')
+  {
+  sh "chmod +x -R ${env.WORKSPACE}"
+  sh "chmod +x -R ${mavenHome} && ${mavenHome}/bin/mvn sonar:sonar"
+  }
+ stage('4.UploadWarNexus')
+        {
+        //sh '${mavenHome}/bin/mvn clean deploy'
+        }
+ stage('5.DeployToUAT')
+        {
+        deploy adapters: [tomcat9(credentialsId: 'Tomcat_Credentials', path: '', url: 'http://34.227.74.66:8080/')], contextPath: null, war: '**/*.war'
+        }   
+ stage('5.aPPROVALGAGE')
+        {
+        deploy adapters: [tomcat9(credentialsId: 'Tomcat_Credentials', path: '', url: 'http://34.227.74.66:8080/')], contextPath: null, war: '**/*.war'
+        }   
+  }
