@@ -1,0 +1,45 @@
+@Library('Datapandas-Library') _
+pipeline {
+  agent any 
+  tools{
+    maven "maven386"
+  }
+  stages{
+       stage('1GetCode') {
+            steps{
+              git branch: 'dev', url: 'https://github.com/benadaba/maven-web-application'
+                }
+
+        }
+      
+       stage('2build') {
+            steps{
+              //sh "mvn package"
+              build('Package')
+           
+            }
+        }
+        
+     stage('3CodeQualityAnalysis') {
+            steps{
+              sh "mvn sonar:sonar"
+               
+               common("SonarQube Report")
+            }
+        }
+        
+        
+     stage('deploy') {
+            steps{
+            //   sh "mvn deploy"
+            stages('Upload Into Nexus')
+            }
+        }
+    }
+    
+    post{
+        always{sh "echo always"}
+        success{sh "echo success"}
+        failure{sh "echo failure"}
+    }
+}
