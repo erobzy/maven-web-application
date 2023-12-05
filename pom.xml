@@ -110,8 +110,8 @@
 	    
 	    <snapshotRepository>
 	      <id>nexus</id>
-	      <name>DataPandas Snapshot Nexus Repository </name>
-	      <url>http://35.176.80.39:3000/repository/docker-snapshot/</url>
+	      <name>mvn-pipeline </name>
+	      <url>http://44.204.74.199:8081/repository/mvn-pipeline/</url>
 	    </snapshotRepository>
 	    
 	</distributionManagement>
