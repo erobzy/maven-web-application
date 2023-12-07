@@ -105,13 +105,13 @@
 	    <repository>
 	      <id>nexus</id>
 	      <name>mvn-pipeline-release</name>
-	      <url>http://44.204.29.23:8081/repository/mvn-pipeline-release/</url>
+	      <url>http://54.211.81.61:8081/repository/mvn-pipeline-release/</url>
 	    </repository>
 	    
 	    <snapshotRepository>
 	      <id>nexus</id>
 	      <name>mvn-pipeline </name>
-	      <url>http://44.204.29.23:8081/repository/mvn-pipeline/</url>
+	      <url>http://54.211.81.61:8081/repository/mvn-pipeline/</url>
 	    </snapshotRepository>
 	    
 	</distributionManagement>
